@@ -13,5 +13,5 @@ local options = {
     },
 }
 
-options.formatters.nixfmt.args = { "--indent=4" }
+require("configs.conform").formatters.nixfmt.args = { "--indent=4" }
 return options
