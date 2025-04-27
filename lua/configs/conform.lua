@@ -1,7 +1,7 @@
 local options = {
     formatters_by_ft = {
-        lua = { "stylua" },
-        nix = { "nixfmt" },
+        lua = { "stylua" , },
+        nix = { "nixfmt" , arg = {"--indent=4"}},
         -- css = { "prettier" },
         -- html = { "prettier" },
     },
