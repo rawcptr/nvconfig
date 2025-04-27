@@ -7,11 +7,17 @@ local options = {
         -- html = { "prettier" },
     },
 
+    formatters = {
+        nixfmt = {
+            cmd = "nixfmt",
+            args = { "--indent=4" },
+        },
+    },
+
     format_on_save = {
         timeout_ms = 500,
         lsp_fallback = true,
     },
 }
 
-require("configs.conform").formatters.nixfmt.args = { "--indent=4" }
 return options
