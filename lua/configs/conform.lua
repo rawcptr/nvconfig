@@ -1,7 +1,6 @@
 local options = {
     formatters_by_ft = {
         lua = { "stylua" },
-        -- nix = { "nixfmt", = { "--indent=4" } },
         nix = { "nixfmt" },
 
         -- css = { "prettier" },
@@ -14,6 +13,5 @@ local options = {
     },
 }
 
-require("conform").formatters.nixfmt.args = { "--indent=4" }
-
+options.formatters.nixfmt.args = { "--indent=4" }
 return options
