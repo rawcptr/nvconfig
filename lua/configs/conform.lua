@@ -11,7 +11,6 @@ local options = {
     formatters = {
         nixfmt = {
             cmd = "nixfmt",
-            args = { "--indent=4" },
         },
     },
 
