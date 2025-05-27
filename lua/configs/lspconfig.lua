@@ -1,6 +1,16 @@
 require("nvchad.configs.lspconfig").defaults()
 
-local servers = { "html", "cssls", "nixd", "nushell", "clangd" }
+local servers = {
+    "html",
+    "cssls",
+    "nil_ls",
+    "nushell",
+    "clangd",
+    "zls",
+    "textlsp",
+    "ruff",
+    "asm_lsp",
+}
 
 vim.lsp.config.clangd = {
     cmd = {
